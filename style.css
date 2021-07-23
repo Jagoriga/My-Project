@@ -1,5 +1,5 @@
 body {
-    font-size: 15px;
+   
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
 
@@ -10,16 +10,16 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: seashell;
 }
-
-
+h1{
+    font-size: 35px;
+}
+/* Navigation */
 ul {
     list-style-type:circle;   
 }
 
-
-
 .navflex {
-    background-color: sandybrown;
+    background-color: rgb(218, 203, 190);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -33,24 +33,28 @@ ul {
 li
     {
     margin:20px; 
-    font-size: 25px;      
+    font-size: 20px;      
     }
 
+    /* Jumbotron */
+    
 .jumbotron 
     {
     background: url(./images/background.jpg) 50% 50%; 
     background-size: cover;
-    height: 90vh;
-    color: var(--white);
+    height: 90%;
+    
+    
     }
 
 .container-home 
     {
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
+    padding: 25px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     }
 
 .image-container 
@@ -64,7 +68,7 @@ li
     {
         margin-bottom: 16px;
         background-color: rgba(231, 226, 226, 0.5);
-        padding: 15px;
+        padding: 20px;
         color: rgb(58, 56, 56);
     }
 

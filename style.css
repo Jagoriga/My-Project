@@ -21,7 +21,7 @@ button
         padding: 5px;
         
     }
-/* Navigation */
+/* Header */
 
 ul 
     {
@@ -34,13 +34,57 @@ li
     font-size: 20px;      
     }
 
-.navflex {
+.div-header
+    {
     background-color: rgb(218, 203, 190);
-    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; 
-}
+    justify-content: space-between;
+    }
+
+
+.social
+    {
+    padding: 10px;
+    margin-top: 35px;
+    }
+
+.fa {
+    padding: 5px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    }
+
+.fa:hover 
+    {
+    opacity: 0.5;
+    }
+
+.fa-facebook 
+    {
+    background: #3B5998;
+    color: white;
+    }
+  
+
+.fa-instagram 
+    {
+        background: #125688;
+        color: white;
+    }
+.fa-github
+    {
+    
+        background: #cbd0d4;
+    }
+
+.navflex 
+    {
+    padding: 10px;
+
+    }   
 
 .navflex ul{
     display: flex;    

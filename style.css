@@ -1,6 +1,5 @@
 body {
    
-    line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -23,16 +22,9 @@ button
     }
 /* Header */
 
-ul 
-    {
-    list-style-type:circle;   
-    }
 
-li
-    {
-    margin:20px; 
-    font-size: 20px;      
-    }
+
+
 
 .div-header
     {
@@ -42,6 +34,24 @@ li
     justify-content: space-between;
     }
 
+.navflex 
+    {
+    padding: 10px;
+
+    }   
+
+.navflex ul{
+    display: flex;
+    list-style-type:circle;     
+}
+
+.navflex ul li
+    {
+        margin:20px; 
+        font-size: 20px;      
+    }
+
+        /* Social */
 
 .social
     {
@@ -77,20 +87,9 @@ li
 .fa-github
     {
     
-        background: #cbd0d4;
+        background: #101111;
+        color: white;
     }
-
-.navflex 
-    {
-    padding: 10px;
-
-    }   
-
-.navflex ul{
-    display: flex;    
-}
-
-
 
     /* Jumbotron */
     
@@ -123,7 +122,7 @@ li
 .text-container 
     {
         margin-bottom: 16px;
-        background-color: rgba(231, 226, 226, 0.5);
+        background-color: rgba(231, 226, 226, 0.7);
         padding: 20px;
         color: rgb(58, 56, 56);
     }
@@ -220,30 +219,41 @@ li
         
         display: grid;
         grid-template-areas: "DIV1 DIV2";
-        grid-template-columns: (auto);
+        grid-template-columns: max-content;
         column-gap: 16px;
-        
-        
-        
+        max-width: 1320px
+        height: max-content;
+      
         }
 .div-grid div
         {   
         background-color: rgb(214, 190, 168); 
-        height: 600px;
-        max-width: 1320px
+        height: auto;
         }
 .div1
         {
         float: left;
-        width: 28%;
-
+        width: 100%;
         }
+.div1 li
+    {
+    margin:20px; 
+    font-size: 20px;      
+    }
+        
 .div2  
         {
         float: right;
-        width: 68%;
-        
+        width: 100%;
         }
+
+.img-grid 
+    {
+        width: 600px;
+        height: 400px;
+        margin-top:30px;
+    }
+
 
 /*Contact Me*/      
         

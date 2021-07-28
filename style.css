@@ -10,13 +10,29 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: seashell;
 }
-h1{
+h1
+    {
     font-size: 35px;
-}
+    }
+
+button 
+    {
+        text-transform: uppercase;
+        padding: 5px;
+        
+    }
 /* Navigation */
-ul {
+
+ul 
+    {
     list-style-type:circle;   
-}
+    }
+
+li
+    {
+    margin:20px; 
+    font-size: 20px;      
+    }
 
 .navflex {
     background-color: rgb(218, 203, 190);
@@ -30,11 +46,7 @@ ul {
     display: flex;    
 }
 
-li
-    {
-    margin:20px; 
-    font-size: 20px;      
-    }
+
 
     /* Jumbotron */
     
@@ -84,8 +96,18 @@ li
 .about-me 
     {
         background-color:  rgb(218, 203, 190);
+        border: 0.2em solid rgb(216, 235, 216);
+       
     }
-
+.container
+    {
+       
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        
+    }
 .section-header 
     {
         display: flex;
@@ -93,9 +115,11 @@ li
         align-items: center;
         max-width: 100vw;
         margin-bottom: 48px;
+        
     }
 .section-title 
     {
+        font-weight: bold;
         font-size: 30px;
         line-height: 2;
         text-align: center;
@@ -105,70 +129,136 @@ li
 .section-subtitle 
     {
         text-align: center;
+        font-weight: bold;
     }  
 
 
-.container 
-    {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    
-    }   
+  
 
 .section-content 
     {
+        width: 100%;
+        height: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        
+        
+        
+        
     }
 .section-item 
     {
-        display: flex;
-        flex-direction: column;
+        height: 300px;
         text-align: center;
         align-items: center;
         max-width: 28%;
+        background-color: rgb(201, 192, 176);
+        border: 0.2em solid rgb(216, 235, 216);
+        margin: auto auto auto auto;
+        
     }
     
 
-   
-.container-inner > * 
+ .section-content :hover
     {
-        margin-bottom: 16px;
-    }
-.container-inner 
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        background-color: rgb(243, 233, 217); 
+    }  
+
+ 
 
 /* Main */
-.main-title 
-    {
-        font-size: 35px;
-        color: steelblue;   
-    }
+
     
 
 .div-grid
         {
         
         display: grid;
-        grid-template-areas: "DIV1 DIV2 DIV3";
+        grid-template-areas: "DIV1 DIV2";
         grid-template-columns: (auto);
         column-gap: 16px;
         
+        
+        
         }
 .div-grid div
+        {   
+        background-color: rgb(214, 190, 168); 
+        height: 600px;
+        max-width: 1320px
+        }
+.div1
         {
+        float: left;
+        width: 28%;
+
+        }
+.div2  
+        {
+        float: right;
+        width: 68%;
+        
+        }
+
+/*Contact Me*/      
+        
+.contacts 
+        {
+       
+            color: white;
+        }
+
+.contact-container
+        {
+            background: url(./images/temnii-fon.jpg) 70% ;
+            background-size: cover;
+            margin-top: 20px;
             
-            background-color: rgb(214, 190, 168);
-            width: (400);
-            height: 300px;
-          
+        }       
+.contacts-form 
+        {
+            width: 93%;
+            margin-left: 25px;
+            margin-right: 25px;
+            
+        }
+
+.contacts-form__inputs 
+        {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+
+.contacts-form__inputs input
+        {
+            border-radius: 6px;
+            width: 40%;
+            min-height: 40px;
+        }
+        
+.contact-form, textarea 
+        {
+            border-radius: 6px;
+            padding: 16px;
+            width: 100%;
+            background-color: white;
+        }
+        
+
+.contacts-form button 
+        {
+            border-radius: 6px;
+            margin-bottom: 25px;
+            padding: 8px;
+            
+        }
+        
+
+footer 
+        {
+            text-align: center;
+            padding: 20px 0;
         }

@@ -5,6 +5,22 @@ body
     background-color: seashell;
 
     }
+h1{
+    color: red;
+    font-size: 70px;
+    text-align: center;
+}
+
+img
+{
+width: 40%;
+height: 40%;
+
+}
+
+p{
+    text-align: center;
+}
 h2
     {
     text-align: center;

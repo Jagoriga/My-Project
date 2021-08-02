@@ -86,7 +86,7 @@
         <div class="section-item">
             <h2>My Hobbies.</h2>
             <p>You can see information about my hobbies and additional skills in this section.</p>
-            <button class="button" >READ MORE</button>
+            <button class="button" onclick="document.location='./hobbies.html'">READ MORE</button>
             
         </div>
 
@@ -187,9 +187,10 @@
                         <input type="email" name='email' placeholder="Your Email">
                 </div>
                 <br>
-                    <textarea name="message" cols="30" rows="10" placeholder="Write Message"></textarea>
+                    <textarea name="message" cols="30" rows="5" placeholder="Write Message"></textarea>
                     <button class="button" type='submit'>Send</button>
-                    
+                 <div id='resultmsg'></div> 
+                 <br>   
             </form>
             
         </div>
@@ -197,6 +198,8 @@
 <footer>
     <span>Не судите строго! :-) &copy; 2021</span>
 </footer>
+
+<script src="./formhandler.js" type="text/javascript"></script>
 
 </body>
 </html>

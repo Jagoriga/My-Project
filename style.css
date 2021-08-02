@@ -223,7 +223,6 @@ button
         grid-template-areas: "DIV1 DIV2";
         grid-template-columns: max-content;
         column-gap: 16px;
-        max-width: 1320px
         height: max-content;
       
         }

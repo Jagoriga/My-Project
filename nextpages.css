@@ -49,34 +49,34 @@ div
 
 .layout 
     {
-    width: 90%; /* Ширина всей таблицы */
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     }
 
-TD 
+td 
     {
-    vertical-align: top; /* Вертикальное выравнивание в ячейках */
-    padding: 10px; /* Поля вокруг ячеек */
+    vertical-align: top;
+    padding: 10px; 
    
     }
 
 
-TD.leftcol
+td.leftcol
     {
-    width: 300px; /* Ширина левой колонки */
-    background: rgb(218, 203, 190); /* Цвет фона левой колонки */
+    width: 300px; 
+    background: rgb(218, 203, 190);
     
     
     }
 
-TD.rightcol 
+td.rightcol 
     {
     background: rgb(231, 226, 226); /* Цвет фона правой колонки */
     
     }
 
-    button 
+button 
     {
         text-transform: uppercase;
         padding: 8px;

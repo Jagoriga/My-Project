@@ -226,13 +226,13 @@ $message=htmlspecialchars($message);
 // адрес почты куда придет письмо
 $address="leonid.gandler@gmail.com";
 // текст письма 
-$note_text="Тема : $urok \r\nИмя : $username \r\n Email : $email \r\n Дополнительная информация : $message";
+$note_text="Тема : $urok \r\n Name : $username \r\n Email : $email \r\n Дополнительная информация : $message";
 
 if (isset($username)  &&  isset ($sab) ) {
 mail($address,$note_text,"Content-type:text/plain; windows-1251"); 
 // сообщение после отправки формы
     
-echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $email1</b>.</p>";
+echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $email</b>.</p>";
 }
 
 ?>

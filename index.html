@@ -201,41 +201,7 @@
 
 <script src="./formhandler.js" type="text/javascript"></script>
 
-<?php
 
-error_reporting( E_ERROR );   //Отключение предупреждений и нотайсов (warning и notice) на сайте
-// создание переменных из полей формы		
-if (isset($_POST['username']))		{$username		= $_POST['username'];		if ($username == '')	{unset($username);}}
-if (isset($_POST['email']))		    {$email		    = $_POST['email'];		    if ($email == '')	    {unset($email);}}
-if (isset($_POST['message']))		{$message			= $_POST['message'];		if ($message == '')	{unset($text);}}
-if (isset($_POST['sab']))			{$sab			= $_POST['sab'];		if ($sab == '')		{unset($sab);}}
-//стирание треугольных скобок из полей формы
-/* комментарий */
-if (isset($username) ) {
-$username=stripslashes($username);
-$username=htmlspecialchars($username);
-}
-if (isset($email) ) {
-$email1=stripslashes($email);
-$email1=htmlspecialchars($email);
-}
-if (isset($message) ) {
-$message=stripslashes($message);
-$message=htmlspecialchars($message);
-}
-// адрес почты куда придет письмо
-$address="leonid.gandler@gmail.com";
-// текст письма 
-$note_text="Тема : $urok \r\nИмя : $username \r\n Email : $email \r\n Дополнительная информация : $message";
-
-if (isset($username)  &&  isset ($sab) ) {
-mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
-// сообщение после отправки формы
-    
-echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $email1</b>.</p>";
-}
-
-?>
 
 </body>
 </html>

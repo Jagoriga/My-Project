@@ -207,7 +207,7 @@ error_reporting( E_ERROR );   //Отключение предупреждени�
 // создание переменных из полей формы		
 if (isset($_POST['username']))		{$username		= $_POST['username'];		if ($username == '')	{unset($username);}}
 if (isset($_POST['email']))		    {$email		    = $_POST['email'];		    if ($email == '')	    {unset($email);}}
-if (isset($_POST['message']))		{$message		= $_POST['message'];		if ($message == '')	    {unset($text);}}
+if (isset($_POST['message']))		{$message		= $_POST['message'];		if ($message == '')	    {unset($message);}}
 if (isset($_POST['sab']))			{$sab			= $_POST['sab'];		    if ($sab == '')		    {unset($sab);}}
 //стирание треугольных скобок из полей формы
 /* комментарий */

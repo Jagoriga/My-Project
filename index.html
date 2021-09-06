@@ -181,7 +181,7 @@
                 <span class='section-subtitle'>You can use this form to contact me. You can leave your comment and I will contact you.</span>
             </div>
 
-            <form method="post" class="contacts-form">
+            <form action="index.php" method="post" class="contacts-form">
                 <div class="contacts-form__inputs">
                         <input type="text" name='username' placeholder="Your name">
                         <input type="email" name='email' placeholder="Your Email">

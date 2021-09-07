@@ -100,7 +100,7 @@
 <section id='main'>
     <div class="section-header">
             <span class='section-title'>Main.</span>
-            <span class='section-subtitle'>Below you can see the some main information about me.</span>
+            <span class='section-subtitle'>Below you can see the some of the projects where I have participated.</span>
     </div>
     <div class='div-grid'>
         <div class='div1'>
